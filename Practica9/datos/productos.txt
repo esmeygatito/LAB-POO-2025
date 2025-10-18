@@ -1,0 +1,5 @@
+1,Monitor 27,Pantallas
+2,Teclado,Perifericos
+4,Mouuse,Perifericos
+3,Webcam,Video
+5,Microfono,Audio
