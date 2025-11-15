@@ -10,7 +10,6 @@ import java.sql.SQLException;
 public class DB {
 
     // --- Configuración para XAMPP ---
-    // 2. Asegúrate de que el driver .jar de MySQL esté en las 'Libraries' de NetBeans.
     private static final String URL = "jdbc:mysql://localhost:3306/agenda_db?useSSL=false&serverTimezone=UTC"; 
     private static final String USER = "root";       // Usuario por defecto de XAMPP
     private static final String PASS = "";           // Contraseña vacía por defecto de XAMPP
@@ -22,7 +21,6 @@ public class DB {
             Class.forName(DRIVER);
         } catch (ClassNotFoundException e) {
             System.err.println("Error: No se encontró el driver de MySQL.");
-            // Esto falla si no agregaste el JAR a las 'Libraries'
             e.printStackTrace();
             throw new SQLException("Driver no encontrado", e);
         }
